@@ -30,6 +30,4 @@ jobs:
           context: .
           platforms: linux/amd64,linux/arm64
           tags: |
-            ${{ env.TAG_BASE }}:latest
-            ${{ env.TAG_BASE }}:${{steps.tag.outputs.tag}}
           push: true
