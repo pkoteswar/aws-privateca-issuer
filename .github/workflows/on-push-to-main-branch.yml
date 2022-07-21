@@ -44,6 +44,5 @@ jobs:
           pkg_version=${{ env.PLUGIN_VERSION }}
         context: .
         tags: |
-          ${{ env.TAG_BASE }}:latest
           ${{ env.TAG_BASE }}:${{ env.PLUGIN_VERSION }}
         push: true
